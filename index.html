@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three.js Interactive 3D Application</title>
+</head>
+
+<body>
+
+  <div id="app">
+
+    <aside id="hud">
+      <h1>Interactive 3D Prototype</h1>
+
+      <div>Hover: <span id="hoverInfo">-</span></div>
+      <div>Selected: <span id="selectedInfo">-</span></div>
+      <div>Animation: <span id="animationInfo">-</span></div>
+      <div>Loading: <span id="loadingInfo">ready</span></div>
+      <div>Environment: <span id="envInfo">ON</span></div>
+
+      <h2>Local vs World (Child Sphere)</h2>
+      <div>Local: <span id="childLocalInfo">-</span></div>
+      <div>World: <span id="childWorldInfo">-</span></div>
+    </aside>
+
+    <aside id="infoPanel">
+      <h2>Information Panel</h2>
+      <div>Name: <span id="infoName">-</span></div>
+      <div>Position (world): <span id="infoPosition">-</span></div>
+      <div>Rotation (deg): <span id="infoRotation">-</span></div>
+      <div>Scale: <span id="infoScale">-</span></div>
+      <div>Material Type: <span id="infoMaterial">-</span></div>
+    </aside>
+
+    <aside id="help">
+      <b>Mouse</b>: drag = orbit, scroll = zoom, right drag = pan, click = select<br />
+      <b>1 / 2 / 3</b>: Idle / Walk / Run &nbsp;|&nbsp;
+      <b>E</b>: environment on/off &nbsp;|&nbsp;
+      <b>P</b>: pause parent motion &nbsp;|&nbsp;
+      <b>G</b>: sway group<br />
+      Klik robot = select + animasi Wave
+    </aside>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
